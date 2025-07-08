@@ -17,7 +17,7 @@ doc_reqs = [
 #     if line.startswith("__version__ ="):
 #         break
 # version = line.split(" = ")[-1].strip('"')
-version="0.0.7"
+version="0.0.8"
 
 setup(
     name="sphinx-comments-zhaojiedi",
