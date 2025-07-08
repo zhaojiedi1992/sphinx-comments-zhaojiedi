@@ -19,7 +19,7 @@ for line in init.read_text().split("\n"):
 version = line.split(" = ")[-1].strip('"')
 
 setup(
-    name="sphinx-comments",
+    name="sphinx-comments-zhaojiedi",
     version=version,
     description="Add comments and annotation to your documentation.",
     long_description=readme_text,
