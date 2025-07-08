@@ -1,4 +1,4 @@
-name: sphinx-comments
+name: sphinx-comments-zhaojiedi
 type: sphinx
 requirements_file: doc/requirements.txt
 python:
