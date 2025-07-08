@@ -9,7 +9,7 @@ function update_version(){
   #sed -i "s@version=\"$version_number\"@version=\"$new_version\"@g" $FILE
   sed -i.bak "s@version=\"$version_number\"@version=\"$new_version\"@g" $FILE
 }
-update_version setup.py
+update_version sphinx_comments_zhaojiedi/__init__.py
 source .venv/bin/activate 2>/dev/null 
 conda activate panda_python_kit 2>/dev/null
 

@@ -11,13 +11,13 @@ doc_reqs = [
     for ii in path_doc_reqs.read_text(encoding="utf8").split("\n")
     if ii and not ii.startswith("#") and ii != "."
 ]
-# Parse version
-# init = Path(__file__).parent.joinpath("sphinx_comments", "__init__.py")
-# for line in init.read_text().split("\n"):
-#     if line.startswith("__version__ ="):
-#         break
-# version = line.split(" = ")[-1].strip('"')
-version="0.0.10"
+#Parse version
+init = Path(__file__).parent.joinpath("sphinx_comments", "__init__.py")
+for line in init.read_text().split("\n"):
+    if line.startswith("__version__ ="):
+        break
+version = line.split(" = ")[-1].strip('"')
+# version="0.0.10"
 
 setup(
     name="sphinx-comments-zhaojiedi",
