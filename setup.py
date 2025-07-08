@@ -12,7 +12,7 @@ doc_reqs = [
     if ii and not ii.startswith("#") and ii != "."
 ]
 #Parse version
-init = Path(__file__).parent.joinpath("sphinx_comments", "__init__.py")
+init = Path(__file__).parent.joinpath("sphinx_comments_zhaojiedi", "__init__.py")
 for line in init.read_text().split("\n"):
     if line.startswith("__version__ ="):
         break
