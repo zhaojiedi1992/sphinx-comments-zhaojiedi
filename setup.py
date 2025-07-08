@@ -14,9 +14,9 @@ doc_reqs = [
 #Parse version
 init = Path(__file__).parent.joinpath("sphinx_comments_zhaojiedi", "__init__.py")
 for line in init.read_text().split("\n"):
-    if line.startswith("__version__ ="):
+    if line.startswith("__version__="):
         break
-version = line.split(" = ")[-1].strip('"')
+version = line.split("=")[-1].strip('"')
 # version="0.0.10"
 
 setup(

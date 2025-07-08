@@ -3,7 +3,7 @@
 import os
 from textwrap import dedent
 
-__version__="1.0.3"
+__version__="1.0.4"
 
 
 def shp_static_path(app):
